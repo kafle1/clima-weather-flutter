@@ -1,34 +1,37 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
+# Clima - Weather App
 
-# Clima ☁
+Clima - Weather App is a simple flutter app that uses Open Weather api and async programming in dart to fetch the data and show it according to the users location. It is able to use the native feature like getting the user's location.
 
-## Our Goal
+## Preview
 
-The objective of this tutorial is to learn about asynchronous programming in Dart. We'll look at how to carry out time consuming tasks such as getting device location and networking to get data from the internet. 
+![App Screenshot](https://i.ibb.co/r75ZRV3/Screenshot-1632644627.png)
 
+See Screenshots:
 
-## What you will create
+[Image 1](https://i.ibb.co/r75ZRV3/Screenshot-1632644627.png), 
+[Image 2](https://i.ibb.co/wg63SYY/Screenshot-1632644644.png)
+  
+## Tech Stack
 
-We’re going to make a weather app inspired by the beautiful designs made by [Olia Gozha](https://dribbble.com/shots/4663154-). By the end of the module, you'll be able to find out the live weather data in the current location of the device as well as the weather for any city you can think of!
+Flutter, Dart, Open Weather API
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/clima-demo.gif)
+  
+## Run Test
 
-## What you will learn
+1. Open your emulator from desired place. I prefer android studio virtual device.
+2. Then open the code with VS code / Android studio and press F5 in Vs code start app or Click on play button in android studio.
 
-- How to use Dart to perform asynchronous tasks.
-- Understand async and await.
-- Learn about Futures and how to work with them.
-- How to network with the Dart http package.
-- What APIs are and how to use them to get data from the internet.
-- What JSONs are and how to parse them using the Dart convert package.
-- How to pass data forwards and backwards between screens using the Navigator.
-- How to handle exceptions in Dart using try/catch/throw.
-- Learn about the lifecycle of Stateful Widgets and how to override them.
-- How to use the Geolocator package to get live location data for both iOS and Android.
-- How to use the TextField Widget to take user input.
+ 
+ Enjoy!
+  
+## Developer
 
+- [@kafle1](https://www.github.com/kafle1)
 
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+  
+## Support / Contact
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+For support, email kafleniraj@gmail.com.
+
+  
