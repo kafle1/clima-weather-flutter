@@ -1,37 +1,30 @@
-
 # Clima - Weather App
 
-Clima - Weather App is a simple flutter app that uses Open Weather api and async programming in dart to fetch the data and show it according to the users location. It is able to use the native feature like getting the user's location.
+A Flutter app that shows current weather for your location, or for any city you search, using the OpenWeatherMap API.
 
 ## Preview
 
-![App Screenshot](https://i.ibb.co/r75ZRV3/Screenshot-1632644627.png)
+![App Screenshot](docs/screenshot.png)
 
-See Screenshots:
+The screenshot above is a web build served locally: geolocation is blocked in that headless context, so it shows the app's error state instead of live weather data. On a device with location permission granted it shows the current temperature, condition icon and a short message instead.
 
-[Image 1](https://i.ibb.co/r75ZRV3/Screenshot-1632644627.png), 
-[Image 2](https://i.ibb.co/wg63SYY/Screenshot-1632644644.png)
-  
 ## Tech Stack
 
-Flutter, Dart, Open Weather API
+Flutter, Dart, geolocator, OpenWeatherMap API
 
-  
-## Run Test
+## Running it
 
-1. Open your emulator from desired place. I prefer android studio virtual device.
-2. Then open the code with VS code / Android studio and press F5 in Vs code start app or Click on play button in android studio.
+Built and tested with Flutter 3.32.8 / Dart 3.8.1.
 
- 
- Enjoy!
-  
+1. `flutter pub get`
+2. The app needs an OpenWeatherMap API key. Get a free one at openweathermap.org and set it as the `apiKey` constant in `lib/services/weather.dart`.
+3. Run on a connected device or emulator with `flutter run`, or build for web with `flutter build web`.
+4. Location access needs to be granted for the "use my location" button to work. The "search by city" button works without it.
+
 ## Developer
 
 - [@kafle1](https://www.github.com/kafle1)
 
-  
 ## Support / Contact
 
 For support, email kafleniraj@gmail.com.
-
-  
