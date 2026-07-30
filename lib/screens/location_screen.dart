@@ -12,10 +12,10 @@ class LocationScreen extends StatefulWidget {
 
 class _LocationScreenState extends State<LocationScreen> {
   WeatherModel weather = WeatherModel();
-  int temperature;
-  String weatherIcon;
-  String cityName;
-  String weatherMessage;
+  int? temperature;
+  String? weatherIcon;
+  String? cityName;
+  String? weatherMessage;
 
   @override
   void initState() {
@@ -46,7 +46,7 @@ class _LocationScreenState extends State<LocationScreen> {
 
       //Get the message for the user according to different weather condition
 
-      weatherMessage = weather.getMessage(temperature);
+      weatherMessage = weather.getMessage(temperature!);
     });
   }
 
@@ -59,7 +59,7 @@ class _LocationScreenState extends State<LocationScreen> {
             image: AssetImage('images/location_background.jpg'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
-                Colors.white.withOpacity(0.8), BlendMode.dstATop),
+                Colors.white.withValues(alpha: 0.8), BlendMode.dstATop),
           ),
         ),
         constraints: BoxConstraints.expand(),
@@ -111,7 +111,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       style: kTempTextStyle,
                     ),
                     Text(
-                      weatherIcon,
+                      weatherIcon ?? '',
                       style: kConditionTextStyle,
                     ),
                   ],
